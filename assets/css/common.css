@@ -1,0 +1,60 @@
+/* 공통요소 - 공통클래스 */
+
+/* inner */
+.inner {
+  position: relative;
+  max-width: 1408px;
+  padding: 0 104px;
+  margin: 0 auto;
+}
+
+/* swiper */
+.cont-slide1 .link-more, .group-cont .title-wrap .link-more{ position: relative; display: inline-block; vertical-align: top; font-size: 14px; line-height: 18px; font-weight: normal; letter-spacing: -0.36px; font-family: "TTHoves", "NanumSquare", "나눔스퀘어"; }
+.cont-slide1 .link-more::after, .group-cont .title-wrap .link-more::after{ content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; border-bottom: 1px solid #000; }
+
+/* blind */
+.blind{ position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; }
+.video-item{ width: 100%; height: 544px; -o-object-fit: cover; object-fit: cover; }
+input::placeholder{ color: #ccc; }
+.name::before{ content: ""; position: absolute; left: -8px; top: 6px; width: 1px; height: 10px; background-color: #000; }
+
+
+
+/* sp image */
+.footer .related-item .related::before,
+.inner8 .related-item .related::before,
+.swiper-button-next::after, .swiper-button-prev::after,
+.inner7 .link-apply::after,
+.inner4 .teams-item .title-box .numb::after,
+.inner2 .ic-search::before,
+.header .logo a::after,
+.btn-wrap button,
+.sc-teams .group-teams .title-box .numb::after,
+.sc-apply .link-apply::after,
+.sc-teams .group-search .ic-search::before {
+  background: url(../images/sp-naver1.png);
+  background-size: 328px 205px;
+}
+
+
+
+/* 1280~[1025] */
+@media (max-width:1280px) {
+.side-search .icon-box::after, .side-nav .nav.active .arrow::after, .side-nav .nav span::after, .header .logo a::after, .btn-menu::after{ background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png); background-size: 195px 181px; }
+}
+
+/* 1024~[768] */
+@media (max-width:1024px) { .inner{ padding: 0 50px; }
+
+  /* 셀렉트박스 앞에 꾸며주는것 */
+.select-box input { position: absolute; clip: rect(0, 0, 0, 0); }
+.select-box input:checked+label::before { background: #000; }
+.select-box label::before { content: ""; margin: 8px 10px 0 0; display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid #d0d0d0; }
+
+}
+/* 767~[320] */
+@media (max-width:767px) {
+  .inner{ padding: 0 22px; }
+.side-jobs .sub-item .arrow::before, .side-jobs .select-item .arrow::before{ position: absolute; top: 10px; left: 0; background-position: -136px -93px; width: 8px; height: 5px; }
+  .side-jobs .sub-item .arrow::before, .side-jobs .select-item .arrow::before{ content: ''; background-image: url(../images/sp-naver1.png); background-size: 328px 205px; }
+}

@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naver Careers</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="icon" type="icon" href="./assets/images/favicon.ico" sizes="96x96">
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="#"><span class="blind">네이버커리어스</span></a>
+        </h1>
+        <nav class="gnb active">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav"><span class="line">Teams</span></a>
+              <ul class="sub-list">
+                <li><a href="#"><span class="line">Tech</span></a></li>
+                <li><a href="#"><span class="line">Design</span></a></li>
+                <li><a href="#"><span class="line">Service&Business</span></a></li>
+                <li><a href="#"><span class="line">Corporate</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav"><span class="line">People</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav"><span class="line">Benefits</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav"><span class="line">Culture</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav"><span class="line">Value</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="service-area">
+          <a href="#" class="link-service"><span class="line">Jobs</span></a>
+          <a href="#" class="link-service"><span class="line">Login</span></a>
+          <a href="#" class="link-service"><span class="line">FAQ</span></a>
+        </div>
+        <button class="btn-menu" aria-label="메뉴열기"></button>
+      </div>
+    </header>
+
+    <aside class="side-nav">
+      <h2 class="blind">사이드메뉴</h2>
+      <div class="side-wrap">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav"><span class="arrow">Teams</span></a>
+            <ul class="sub-list">
+              <li><a href="#"><span>Tech</span></a></li>
+              <li><a href="#"><span>Design</span></a></li>
+              <li><a href="#"><span>Service&Business</span></a></li>
+              <li><a href="#"><span>Corporate</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav"><span>People</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav"><span>Benefits</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav"><span>Culture</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav"><span>Value</span></a>
+          </li>
+        </ul>
+        <div class="service-area">
+          <a href="#" class="link-service"><span>Jobs</span></a>
+          <a href="#" class="link-service"><span>Login</span></a>
+          <a href="#" class="link-service"><span>FAQ</span></a>
+        </div>
+
+        <div class="lang-area">
+          <div class="select-wrap">
+
+            <div class="select-box">
+              <input type="checkbox" id="lang1">
+              <label for="lang1">KO</label>
+            </div>
+
+            <div class="select-box">
+              <input type="checkbox" id="lang2">
+              <label for="lang2">EN</label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </aside><!-- side-nav -->
+
+    <aside class="side-jobs">
+      <h2 class="blind">직무검색</h2>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+      <form>
+        <fieldset>
+          <legend class="blind">검색</legend>
+          <div class="input-area">
+            <div class="input-wrap">
+              <input type="text" id="keyword" class="input-text" placeholder="Search Jobs">
+              <button class="btn-search"><span class="blind">검색</span></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="select-area">
+        <h3 class="title">직군/직무</h3>
+        <div class="select-wrap">
+          <ul class="select-list">
+
+            <li class="select-item">
+              <a href="#" class="select"><span class="arrow text">Tech</span>
+                <ul class="sub-list">
+                  <div class="select-box">
+                    <input type="checkbox" id="all1">
+                    <label for="all1" class="all-chk" data-chk="#techList1">전체</label>
+                  </div>
+                  <div class="chk-wrap" id="techList1">
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Software Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job1">
+                        <label for="job1">Frontend</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job2">
+                        <label for="job2">Android</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job3">
+                        <label for="job3">iOS</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job4">
+                        <label for="job4">Backend</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job5">
+                        <label for="job5">AI/ML</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job6">
+                        <label for="job6">Data Engineering</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job7">
+                        <label for="job7">Embedded SW</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job8">
+                        <label for="job8">Graphics</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job9">
+                        <label for="job9">공통</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Hardware Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job10">
+                        <label for="job10">Hardware</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Infra Engineering</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job11">
+                        <label for="job11">Infra Engineering</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job12">
+                        <label for="job12">Data Center Engineering</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Security</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job13">
+                        <label for="job13">Security</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Tech Operations</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job14">
+                        <label for="job14">Tech Staff</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="job15">
+                        <label for="job15">QA</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">공통</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="job16">
+                        <label for="job16">공통</label>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </a>
+            </li>
+
+            <li class="select-item">
+              <a href="#" class="select"><span class="arrow text">Design</span>
+                <ul class="sub-list">
+                  <div class="select-box">
+                    <input type="checkbox" id="all2">
+                    <label for="all2" class="all-chk" data-chk="#techList2">전체</label>
+                  </div>
+                  <div class="chk-wrap" id="techList2">
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Product Design</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des1">
+                        <label for="des1">Product Design</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Visual Comm. & Brand Design</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des2">
+                        <label for="des2">Visual Comm. & Brand Design</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Interactive Design</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des3">
+                        <label for="des3">Interactive Design</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Experience Insight & Planning</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des4">
+                        <label for="des4">Experience Insight & Planning</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Content Writing</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des5">
+                        <label for="des5">Content Writing</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">공통</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="des6">
+                        <label for="des6">공통</label>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </a>
+            </li>
+
+            <li class="select-item">
+              <a href="#" class="select"><span class="arrow text">Service & Business</span>
+                <ul class="sub-list">
+                  <div class="select-box">
+                    <input type="checkbox" id="all3">
+                    <label for="all3" class="all-chk" data-chk="#techList3">전체</label>
+                  </div>
+                  <div class="chk-wrap" id="techList3">
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Product Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser1">
+                        <label for="ser1">Product Development</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Content Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser2">
+                        <label for="ser2">Content Development</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Business Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser3">
+                        <label for="ser3">Business Development</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Trust & Safety</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser4">
+                        <label for="ser4">Trust & Safety</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">어카운트/세일즈</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser5">
+                        <label for="ser5">어카운트/세일즈</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">공통</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ser6">
+                        <label for="ser6">공통</label>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </a>
+            </li>
+
+            <li class="select-item">
+              <a href="#" class="select"><span class="arrow text">Corporate</span>
+                <ul class="sub-list">
+                  <div class="select-box">
+                    <input type="checkbox" id="all4">
+                    <label for="all4" class="all-chk" data-chk="#techList4">전체</label>
+                  </div>
+                  <div class="chk-wrap" id="techList4">
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Marketing</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="cop1">
+                        <label for="cop1">Marketing</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cop2">
+                        <label for="cop2">Brand Planning</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cop3">
+                        <label for="cop3">Content Creative</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cop4">
+                        <label for="cop4">User Research & Data Insight</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cop5">
+                        <label for="cop5">Marketing 공통</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Finance</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="fin1">
+                        <label for="fin1">재무기획</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="fin2">
+                        <label for="fin2">회계</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="fin3">
+                        <label for="fin3">세무</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="fin4">
+                        <label for="fin4">자금</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="fin5">
+                        <label for="fin5">Finance 공통</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Service Infra</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="seri1">
+                        <label for="seri1">소싱</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="seri2">
+                        <label for="seri2">운영관리</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="seri3">
+                        <label for="seri3">빌링</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="seri4">
+                        <label for="seri4">구매</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="seri5">
+                        <label for="seri5">부동산</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Partner Growth Support</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="pgs1">
+                        <label for="pgs1">Partner Growth Support</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Corporate Development</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="cd1">
+                        <label for="cd1">투자</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cd2">
+                        <label for="cd2">Investor Relations</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cd3">
+                        <label for="cd3">Corporate Strategy</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="cd4">
+                        <label for="cd4">ESG</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Compliance</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="com1">
+                        <label for="com1">Risk Management</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="com2">
+                        <label for="com2">내부감사</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Legal</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="leg1">
+                        <label for="leg1">법무</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="leg2">
+                        <label for="leg2">지식재산</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Privacy</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="priv1">
+                        <label for="priv1">개인정보보호</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="priv2">
+                        <label for="priv2">통신비밀보호</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Communication</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="comm1">
+                        <label for="comm1">Strategic Communication</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="comm2">
+                        <label for="comm2">산업및정책연구</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="comm3">
+                        <label for="comm3">Corporate Experience</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="comm4">
+                        <label for="comm4">Communication 공통</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">HR</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="hr1">
+                        <label for="hr1">Human Resources</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="hr2">
+                        <label for="hr2">Employee Relations</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="hr3">
+                        <label for="hr3">Talent Acquisition</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="hr4">
+                        <label for="hr4">HR 공통</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Assist</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass1">
+                        <label for="ass1">채용운영</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass2">
+                        <label for="ass2">통번역</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass3">
+                        <label for="ass3">비서</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass4">
+                        <label for="ass4">기사</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass5">
+                        <label for="ass5">Health Care</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ass6">
+                        <label for="ass6">운영지원</label>
+                      </div>
+                    </li>
+                    <li class="sub-item">
+                      <a href="#" class="sub"><span class="arrow text">Shared Service</span>
+                      </a>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv1">
+                        <label for="ssv1">급여</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv2">
+                        <label for="ssv2">복리후생</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv3">
+                        <label for="ssv3">자산관리</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv4">
+                        <label for="ssv4">총무</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv5">
+                        <label for="ssv5">시설인프라</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv6">
+                        <label for="ssv6">공간운영</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv7">
+                        <label for="ssv7">시스템/안전</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv8">
+                        <label for="ssv8">재무지원</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv9">
+                        <label for="ssv9">구매</label>
+                      </div>
+                      <div class="select-box">
+                        <input type="checkbox" id="ssv10">
+                        <label for="ssv10">건축</label>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="select-area employ">
+        <h3 class="title">고용형태</h3>
+        <div class="select-wrap">
+          <div class="select-box">
+            <input type="checkbox" id="employ1">
+            <label for="employ1">정규</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ2">
+            <label for="employ2">계약</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ3">
+            <label for="employ3">인턴</label>
+          </div>
+        </div>
+      </div>
+      <div class="select-area employ">
+        <h3 class="title">경력</h3>
+        <div class="select-wrap">
+          <div class="select-box">
+            <input type="checkbox" id="employ4">
+            <label for="employ4">신입</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ5">
+            <label for="employ5">경력</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ6">
+            <label for="employ6">무관</label>
+          </div>
+        </div>
+      </div>
+      <div class="select-area employ">
+        <h3 class="title">근무지</h3>
+        <div class="select-wrap">
+          <div class="select-box">
+            <input type="checkbox" id="employ7">
+            <label for="employ7">분당</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ8">
+            <label for="employ8">서울</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ9">
+            <label for="employ9">춘천</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ10">
+            <label for="employ10">세종</label>
+          </div>
+          <div class="select-box">
+            <input type="checkbox" id="employ11">
+            <label for="employ11">글로벌</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-clear">
+        <span class="blind">선택 초기화하기</span>
+        Clear filters
+      </button>
+
+    </aside><!-- side-jobs -->
+
+    <main class="container">
+
+      <section class="sc-main">
+        <h2 class="blind">소개영상</h2>
+        <div class="swiper main-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="video-box">
+                <video class="video-item" autoplay="" muted="" playsinline="" loop="">
+                  <source src="https://recruit.pstatic.net/cdn-vod/naver/Joker.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text-box">
+                <h3 class="title">Board the<br> Navership</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-box">
+                <video class="video-item" autoplay="" muted="" playsinline="" loop="">
+                  <source src="https://recruit.pstatic.net/cdn-vod/naver/Paukova.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text-box">
+                <h3 class="title">Board the <br>Navership</h3>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="video-box">
+                <video class="video-item" autoplay="" muted="" playsinline="" loop="">
+                  <source src="https://recruit.pstatic.net/cdn-vod/naver/Bram.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text-box">
+                <h3 class="title">Board the<br> Navership</h3>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="video-box">
+                <video class="video-item" autoplay="" muted="" playsinline="" loop="">
+                  <source src="https://recruit.pstatic.net/cdn-vod/naver/Yann_Bastard.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text-box">
+                <h3 class="title">Board the<br> Navership</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section><!-- sc-main -->
+
+      <section class="sc-teams">
+        <h2 class="blind">인재검색</h2>
+        <section class="group-search">
+          <h3 class="blind">지원직무검색영역</h3>    
+            <form action="" class="form1">
+              <fieldset>
+                <legend class="blind">검색</legend>
+                <div class="inner">
+                  <div class="group-flex">
+                    <div class="ic-search">
+                      <span class="blind">검색아이콘</span>
+                    </div>
+                    <div class="input-area">
+                      <label for="keyword" class="title">키워드</label>
+                      <div class="input-wrap">
+                        <input type="text" id="keyword" class="input-text" placeholder="프론트엔드 개발자">
+                      </div>
+                    </div>
+                    <div class="select-area">
+                      <span class="title">법인</span>
+                      <select name="" class="select-corp">
+                        <option disabled selected>법인선택</option>
+                        <option value="">NAVER</option>
+                        <option value="">NAVER Cloud</option>
+                        <option value="">WORKS MOBILE</option>
+                        <option value="">SNOW</option>
+                        <option value="">NAVER LABS</option>
+                        <option value="">NAVER WEBTOON</option>
+                        <option value="">NAVER FINANCIAL</option>
+                        <option value="">NAVER I&S</option>
+                      </select>
+                    </div>
+                    <div class="select-area">
+                      <span class="title">직군</span>
+                      <select name="" class="select-career">
+                        <option value="" disabled selected>직군선택</option>
+                        <option value="">Tech</option>
+                        <option value="">Design</option>
+                        <option value=""> Service&Business </option>
+                        <option value="">Corporate
+                        </option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn-submit"> <span>검색</span> </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <!-- 새롭게 구성하는 button영역 -->
+            <div class="side-search">
+              <button class="search-box">Search Jobs</button>
+              <div class="icon-box"></div>
+            </div>
+        </section><!-- group-search -->
+
+        <section class="group-teams">
+          <div class="inner">
+            <div class="headline-wrap">
+              <h3 class="title">Teams</h3>
+              <p class="desc">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p>
+              <a href="#" role="button" class="link-more">Learn more</a>
+            </div>
+          </div>
+          <ul class="teams-list">
+            <li class="teams-item">
+              <a href="#" class="teams-wrap">
+                <div class="inner">
+                  <div class="title-box">
+                    <strong class="title">Tech</strong>
+                    <span class="numb">6</span>
+                  </div>
+                  <div class="desc-box">
+                    <p>다가오는 미래를 구현합니다.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="teams-item">
+              <a href="#" class="teams-wrap">
+                <div class="inner">
+                  <div class="title-box">
+                    <strong class="title">Design</strong>
+                    <span class="numb"></span>
+                  </div>
+                  <div class="desc-box">
+                    <p>경험을 설계합니다.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="teams-item">
+              <a href="#" class="teams-wrap">
+                <div class="inner">
+                  <div class="title-box">
+                    <strong class="title">Service & Business</strong>
+                    <span class="numb">1</span>
+                  </div>
+                  <div class="desc-box">
+                    <p>일상을 풍요롭게 합니다.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="teams-item">
+              <a href="#" class="teams-wrap">
+                <div class="inner">
+                  <div class="title-box">
+                    <strong class="title">Corporate</strong>
+                    <span class="numb">2</span>
+                  </div>
+                  <div class="desc-box">
+                    <p>네이버의 추진력을 만듭니다.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </section><!-- group-teams -->
+      </section><!-- sc-teams -->
+
+      <section class="sc-people">
+        <div class="inner">
+          <div class="headline-wrap">
+            <h3 class="title">People</h3>
+            <p class="desc">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
+            <a href="#" role="button" class="link-more">Learn more</a>
+          </div>
+          <div class="swiper people-slide">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide1.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">마음을 사로잡는 방법</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">권순태</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide2.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">성장의 조각을 찾기 위한 실험</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER WEBTOON </span>
+                      <span class="name">이민선</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide3.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">기술 그 이상의 의미</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER LABS</span>
+                      <span class="name">김수정</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide4.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">애정이 책임이 될 때</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">조민형</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide5.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">가치를 디자인합니다</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">김은진</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide6.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">로봇을 만들기 위해 사람을 공부합니다</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER LABS</span>
+                      <span class="name">박경식</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide7.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">성장의 화두를 만드는 일</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">고은경</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide8.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">기술로 취향 저격</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">김도희</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide10.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">실패를 감수하는 마음</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER </span>
+                      <span class="name">서명원</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide11.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">의미 있는 일을 하고 있다는 감각</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER FINANCIAL</span>
+                      <span>김재홍</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/people_slide9.jpg" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">새로운 세계관을 구축하는 일</strong>
+                    <span role="button" class="link-more">interview</span>
+                    <p class="desc">
+                      <span>NAVER Z</span>
+                      <span class="name">채은석, 심광섭</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- options -->
+            <div class="btn-wrap">
+              <button class="prev" aria-label="이전슬라이드"></button>
+              <button class="next" aria-label="다음슬라이드"></button>
+            </div>
+          </div>
+        </div>
+      </section><!-- sc-people -->
+      <section class="sc-benefits">
+        <div class="inner">
+
+          <div class="headline-wrap">
+            <h3 class="title">Benefits</h3>
+            <p class="desc">네이버의 일하는 문화는 계속 진화합니다</p>
+            <a href="#" role="button" class="link-more">Learn more</a>
+          </div>
+
+          <div class="swiper benefits-slide">
+            <ul class="swiper-wrapper ">
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide1.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Financial Wellbeing</strong>
+                    <p class="desc">회사의 미래가치와 성과를 나누고, <br> 생활의 안정을 지원합니다.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide2.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Time & Refresh</strong>
+                    <p class="desc">저마다 몰입할 수 있는 환경이 다름을 알기에 <br>시간과 공간 선택의 자율성을 가지며 <br>리프레시를 위한 충전의 기회도 마련합니다.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide3.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Work Space</strong>
+                    <p class="desc">
+                      공간이 우리에게 미치는 영향을 잘 알기에,
+                      <br>
+                      우리가 일할 공간을 직접 설계합니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide4.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Work Tools</strong>
+                    <p class="desc">최고의 퍼포먼스를 위해 최적의 장비를 지원합니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide5.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Meal & Snack</strong>
+                    <p class="desc">
+                      우리를 움직이는 에너지원이자, 동료들과의 대화를<br>
+                      이끌어 내는 음식을 풍성하게 제공합니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide6.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Growth</strong>
+                    <p class="desc">
+                      탁월함을 위한 성장의 노력들을 적극 지원하며, <br>
+                      회사와 함께 성장할 수 있는 기회를 만들어 갑니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide7.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Wellness</strong>
+                    <p class="desc">
+                      몸과 마음이 건강할 때 온전히 발현될 수 있습니다.<br>
+                      예방부터 치료, 상담까지, 세심하게 케어합니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-box">
+                    <img src="./assets/images/benefits_slide8.png" alt>
+                  </div>
+                  <div class="desc-box">
+                    <strong class="title">Family</strong>
+                    <p class="desc">
+                      가족은 우리 모두의 든든한 지원군이자 안전망입니다.<br>
+                      이 안전망을 탄탄하게 뒷받침합니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- options -->
+            <div class="btn-wrap">
+              <button class="prev" aria-label="이전슬라이드"></button>
+              <button class="next" aria-label="다음슬라이드"></button>
+            </div>
+          </div>
+        </div>
+      </section><!-- sc-benefits -->
+      <section class="sc-apply">
+        <div class="inner">
+          <h2 class="title">Board the Navership</h2>
+          <a href="#" role="button" class="apply-wrap">
+            지원하기 <span class="link-apply"></span>
+          </a>
+        </div>
+      </section><!-- sc-apply -->
+
+    </main>
+
+    <footer class="footer">
+      <section class="inner">
+        <div class="footer-wrap">
+          <h2 class="blind">네이버커리어푸터</h2>
+          <address class="copy"><a href="#">© NAVER Corp.</a></address>
+          <p class="info"><a href="#">개인정보처리방침</a></p>
+        </div>
+
+        <article class="related-area">
+          <h3 class="blind">관련사이트</h3>
+          <ul class="related-list">
+            <li class="related-item">
+              <button class="related">관련 사이트</button>
+              <ul class="sub-list">
+                <li class="sub-item"><a href="#">NAVER Corp</a></li>
+                <li class="sub-item"><a href="#">NAVER Cloud</a></li>
+                <li class="sub-item"><a href="#">SNOW</a></li>
+                <li class="sub-item"><a href="#">NAVER LABS</a></li>
+                <li class="sub-item"><a href="#">NAVER WEBTOON</a></li>
+                <li class="sub-item"><a href="#">NAVER FINANCIAL</a></li>
+                <li class="sub-item"><a href="#">NAVER I&S</a></li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+      </section>
+    </footer>
+  </div>
+  <!-- wrapper -->
+
+</body>
+
+</html>
