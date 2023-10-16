@@ -55,6 +55,10 @@
 .footer .related-list.on .related-item .sub-list{display: block;}
 .footer .related-list.on .related-item .related::before{ content: ''; transform: rotate(180deg); right: 5px; }
 .footer .related-list.on .related-item .related::after{ content: ''; background: none; }
+/* skip-nav */
+.skip-nav { position: relative }
+.skip-nav a { position: absolute; line-height: 50px; background: #f00; color: #fff; top: -50px; }
+.skip-nav a:focus, .skip-nav a:active { top: 0; }
 
 /* 사이드 화면 */
 .btn-menu{display: none;}
